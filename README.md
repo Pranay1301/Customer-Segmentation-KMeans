@@ -1,3 +1,7 @@
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.0%2B-orange?logo=scikit-learn)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 # Customer Segmentation using K-Means Clustering 🛍️
 
 ## Project Overview
@@ -12,13 +16,13 @@ This project uses unsupervised machine learning to segment customers based on th
 
 This is the main output of the project. The scatter plot below shows the five distinct customer groups identified by the K-Means algorithm based on their income and spending score.
 
-![Customer Segments Visualization](final_plot2.png)
+![Customer Segments Visualization](images/final_plot2.png)
 
 ### 2. The Elbow Method
 
 To determine the optimal number of groups for the customer data, the Elbow Method was used. The chart below shows that the "elbow" point occurs at K=5, indicating that five is the ideal number of clusters.
 
-![Elbow Method Plot](final_plot.png)
+![Elbow Method Plot](images/final_plot.png)
 
 ---
 
@@ -38,6 +42,44 @@ The analysis revealed five distinct customer segments:
 - **Pandas** for data manipulation and analysis.
 - **Matplotlib & Seaborn** for data visualization.
 - **Scikit-learn** for implementing the K-Means algorithm.
+- **Jupyter Notebook** as the development environment.
+
+---
+
+## Setup and Installation Instructions
+
+To run this project on your local machine, follow these steps:
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone [https://github.com/YourUsername/Customer-Segmentation-KMeans.git](https://github.com/YourUsername/Customer-Segmentation-KMeans.git)
+    cd Customer-Segmentation-KMeans
+    ```
+
+2.  **Create and Activate a Virtual Environment:**
+    * It's highly recommended to use a virtual environment to keep dependencies organized.
+    ```bash
+    # Create the environment
+    python -m venv venv
+
+    # Activate on Windows
+    .\venv\Scripts\activate
+
+    # Activate on macOS/Linux
+    source venv/bin/activate
+    ```
+
+3.  **Install Required Libraries:**
+    * The `requirements.txt` file contains all the necessary libraries.
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4.  **Launch Jupyter Notebook:**
+    ```bash
+    jupyter notebook
+    ```
+5.  Open the `customer_segmentation.ipynb` file from the Jupyter interface in your browser.
 
 ---
 
@@ -51,11 +93,6 @@ The analysis revealed five distinct customer segments:
 
 ---
 
-## How to Run
+## License
 
-1.  Clone the repository:
-    ```bash
-    git clone [https://github.com/YourUsername/Customer-Segmentation-KMeans.git](https://github.com/YourUsername/Customer-Segmentation-KMeans.git)
-    ```
-2.  Install the required libraries from `requirements.txt`.
-3.  Run the Jupyter Notebook `customer_segmentation.ipynb`.
+This project is distributed under the MIT License. See the `LICENSE` file for more information.
